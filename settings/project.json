@@ -17,7 +17,7 @@
   "preview-port": 7456,
   "design-resolution-width": 600,
   "design-resolution-height": 1000,
-  "fit-width": false,
+  "fit-width": true,
   "fit-height": true,
   "use-project-simulator-setting": false,
   "simulator-orientation": false,

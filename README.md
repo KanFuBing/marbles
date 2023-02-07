@@ -1,5 +1,7 @@
 # Marbles
 
-> A game of marbles, made with Cocos Creator & Firebase (archived)
+> A game of marbles, made with Cocos Creator & Firebase
 
-![Preview](https://user-images.githubusercontent.com/82582936/152682876-1671c0fe-dc81-4474-bdd5-8e34b84a0606.jpeg)
+旧作。
+
+![Preview](https://user-images.githubusercontent.com/110780208/217192334-d279cc42-84b2-4af2-9ce0-8d9b27d6a0b5.png)

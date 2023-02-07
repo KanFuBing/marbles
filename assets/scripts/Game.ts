@@ -85,7 +85,7 @@ export default class Game extends cc.Component {
     }
 
     start(): void {
-        if (new Date().getHours() < 18) {
+        if (new Date().getHours() < 20 && new Date().getHours() > 6) {
             cc.find('fg2').destroy()
             cc.find('bg2').destroy()
             cc.find('tutorial2').destroy()
