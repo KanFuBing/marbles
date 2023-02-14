@@ -144,6 +144,8 @@ export default class Game extends cc.Component {
         })
         auth.onAuthStateChanged((user) => {
             if (user) { // 已登入
+                cc.find('github').destroy()
+                cc.find('google').destroy()
                 this.doc = firebase.firestore().collection('marble').doc(user.uid)
                 this.doc.get().then((doc) => {
                     if (doc.exists) { // 已经有记录
