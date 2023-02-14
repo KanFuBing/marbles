@@ -78,10 +78,11 @@ export default class Game extends cc.Component {
             projectId: 'chuang-wai',
             storageBucket: 'chuang-wai.appspot.com',
             messagingSenderId: '459472517547',
-            appId: '1:459472517547:web:bad61cf34d3b018501faee',
-            measurementId: 'G-EK6PYGEZSH'
+            appId: '1:459472517547:web:a54eff30257ba37501faee',
+            measurementId: 'G-2RPSWZGRJ2'
         }
         firebase.initializeApp(firebaseConfig)
+        firebase.firestore().enablePersistence()
     }
 
     start(): void {
@@ -142,7 +143,6 @@ export default class Game extends cc.Component {
             auth.signInWithPopup(new firebase.auth.GithubAuthProvider())
         })
         auth.onAuthStateChanged((user) => {
-            console.log(user)
             if (user) { // 已登入
                 this.doc = firebase.firestore().collection('marble').doc(user.uid)
                 this.doc.get().then((doc) => {
